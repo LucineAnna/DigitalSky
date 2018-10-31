@@ -22,6 +22,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/etText</item>
     </style>
+
     <!--标题栏back按钮-->
     <style name="back" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:layout_width">wrap_content</item>
@@ -30,36 +31,36 @@
         <item name="android:padding">0dp</item>
         <item name="android:src">@drawable/icon_back</item>
     </style>
-    <!--登录系列按钮style-->
+    <!--button style-->
     <style name="btnStyle" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:background">@drawable/button</item>
         <item name="android:minHeight">@dimen/dp_35</item>
         <item name="android:textSize">@dimen/margin_medium</item>
         <item name="android:textColor">@color/etText</item>
-        <item name="android:layout_marginLeft">@dimen/margin_huge</item>
-        <item name="android:layout_marginRight">@dimen/margin_huge</item>
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <item name="android:layout_marginRight">@dimen/margin_large</item>
         <item name="android:layout_marginTop">@dimen/margin_huge</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <!--用户名系列输入框style-->
+    <!--item style-->
     <style name="itemStyle">
         <item name="android:background">@drawable/layout_padding</item>
         <item name="android:padding">@dimen/dp_3</item>
-        <item name="android:layout_marginRight">@dimen/margin_huge</item>
-        <item name="android:layout_marginLeft">@dimen/margin_huge</item>
+        <item name="android:layout_marginRight">@dimen/margin_large</item>
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <!--用户名editText系列style-->
+    <!--EditText style-->
     <style name="etStyle">
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_centerVertical">true</item>
         <item name="android:textColor">@color/etText</item>
         <item name="android:textColorHint">@color/etTextHint</item>
-        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textSize">@dimen/margin_normal</item>
         <item name="android:background">@null</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
@@ -72,7 +73,7 @@
         <item name="android:layout_centerVertical">true</item>
     </style>
 
-    <!--文本超链接（忘记密码系列）style-->
+    <!--TextView style-->
     <style name="ttHrefStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>

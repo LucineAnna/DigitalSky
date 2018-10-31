@@ -5,7 +5,7 @@
     <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_normal">12dp</dimen>
     <dimen name="margin_medium">20dp</dimen>
-    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_large">48dp</dimen>
     <dimen name="margin_huge">64dp</dimen>
     <dimen name="line_height">1dp</dimen>
     <dimen name="line_litter_height">0.5dp</dimen>
@@ -30,8 +30,6 @@
     <dimen name="item_height_medium">65dp</dimen>
     <dimen name="item_height_large">100dp</dimen>
     <dimen name="item_height_most">120dp</dimen>
-    <!--editText 宽-->
-    <dimen name="et_width"></dimen>
 
     <!--image的宽和高-->
     <dimen name="image_height_small">15dp</dimen>

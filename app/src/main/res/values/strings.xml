@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">DigitalSky</string>
 
-    <string name="account">请输入用户名</string>
-    <string name="password">请输入密码</string>
-    <string name="new_password">请输入新密码</string>
-    <string name="verificationCode">请输入验证码</string>
-    <string name="mobile">请输入手机号</string>
+    <string name="account">手机号码/用户名</string>
+    <string name="password">密码长度为6-18位，必须包含字母和数字</string>
+    <string name="new_password">新密码长度为6-18位，必须包含字母和数字</string>
+    <string name="verificationCode">验证码</string>
+    <string name="mobile">手机号码</string>
     <string name="href_forget_password">忘记密码？</string>
     <string name="href_register">注册新账号</string>
     <string name="getVerificationCode">获取验证码</string>

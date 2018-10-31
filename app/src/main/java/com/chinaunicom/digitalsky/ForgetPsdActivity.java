@@ -227,7 +227,7 @@ public class ForgetPsdActivity extends AppCompatActivity {
                             et_verification_code.requestFocus();
                         }
                     }else {
-                        Toast.makeText(ForgetPsdActivity.this, "密码必须是6-16位小写字母和数字的组合，可以包含下划线", Toast.LENGTH_LONG).show();
+                        Toast.makeText(ForgetPsdActivity.this, "密码格式不正确", Toast.LENGTH_LONG).show();
                         et_password.requestFocus();
                         return;
                     }
