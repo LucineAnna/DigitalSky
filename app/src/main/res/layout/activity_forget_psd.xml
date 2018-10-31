@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgetPsdActivity">
+
+    <!--background-->
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--标题栏-->
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            style="@style/back"/>
+        <TextView
+            android:text="@string/forgetPsd"
+            style="@style/titleTVStyle" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!--手机号-->
+        <RelativeLayout
+            android:id="@+id/mobile"
+            style="@style/itemStyle">
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:id="@+id/icon_mobile"
+                android:src="@drawable/icon_mobile"
+                style="@style/iconStyle"/>
+
+            <EditText
+                android:id="@+id/et_mobile"
+                android:layout_toRightOf="@+id/icon_mobile"
+                android:layout_toEndOf="@+id/icon_mobile"
+                android:hint="@string/mobile"
+                android:inputType="number"
+                style="@style/etStyle"/>
+        </RelativeLayout>
+
+        <!--新密码-->
+        <RelativeLayout
+            android:id="@+id/new_password"
+            android:layout_marginTop="@dimen/dp_20"
+            style="@style/itemStyle">
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:id="@+id/icon_password"
+                android:src="@drawable/icon_password"
+                style="@style/iconStyle"/>
+            <EditText
+                android:id="@+id/et_new_password"
+                android:layout_toRightOf="@+id/icon_password"
+                android:layout_toEndOf="@+id/icon_password"
+                android:hint="@string/new_password"
+                android:inputType="textPassword"
+                style="@style/etStyle"/>
+            <CheckBox
+                android:contentDescription="@string/app_name"
+                android:id="@+id/cb_password_visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/icon_not_see_psd"
+                android:button="@null"
+                android:checked="false"
+                style="@style/iconStyle"/>
+        </RelativeLayout>
+
+        <!--验证码-->
+        <RelativeLayout
+            android:id="@+id/verificationCode"
+            android:layout_marginTop="@dimen/dp_20"
+            style="@style/itemStyle">
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:id="@+id/icon_verification_code"
+                android:src="@drawable/icon_verification_code"
+                style="@style/iconStyle"/>
+            <EditText
+                android:id="@+id/et_verification_code"
+                android:layout_toRightOf="@+id/icon_verification_code"
+                android:layout_toEndOf="@+id/icon_verification_code"
+                android:hint="@string/verificationCode"
+                android:inputType="number"
+                style="@style/etStyle"/>
+            <Button
+                android:id="@+id/btn_get_verification_code"
+                android:background="@drawable/button_get_verification_code"
+                android:text="@string/getVerificationCode"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/etText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="24dp"
+                android:layout_alignRight="@id/et_verification_code"
+                android:layout_centerVertical="true"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+        </RelativeLayout>
+
+        <!--确认button-->
+        <Button
+            android:id="@+id/btn_confirm"
+            android:text="@string/confirm"
+            style="@style/btnStyle" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
